@@ -8,7 +8,8 @@ import Recursive as rs
 import Sorting as s
 import GraphAlgorithms as ga
 import Graph as g
-
+import GreedyAlgorithm as greedya
+import DynamicProgramming as dp
 
 
 def print_hi(name):
@@ -18,6 +19,6 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    graph = g.generateGraph()
+    print(dp.findLongestCommonSubstring("hish", "fish"))
 
-    print(ga.dijkstraAlgorithm(graph, "start", "fin"))
+
