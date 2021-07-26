@@ -11,6 +11,7 @@ def selectionSort(arr):
         arr.insert(0, maxElement)
         print(arr)
 
+
 def quickSort(arr):
     if len(arr) == 2:
         if arr[0] > arr[1]:

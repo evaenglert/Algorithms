@@ -11,6 +11,7 @@ import Graph as g
 import GreedyAlgorithm as greedya
 import DynamicProgramming as dp
 from BinarySearchTree import BST
+from BinaryTree import BinaryTree, inorder
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -19,17 +20,19 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    root = BST(10)
-    root.left = BST(5)
-    root.left.left = BST(2)
-    root.left.left.left = BST(1)
-    root.left.right = BST(5)
-    root.right = BST(15)
-    root.right.left = BST(13)
-    root.right.left.right = BST(14)
-    root.right.right = BST(22)
+    root = BinaryTree(1)
+    root.left = BinaryTree(2)
+    root.right = BinaryTree(3)
+    root.left.left = BinaryTree(4)
+    root.right.left = BinaryTree(5)
+    root.right.right = BinaryTree(6)
+    root.right.left.left = BinaryTree(7)
+    root.right.left.right = BinaryTree(8)
+    array = []
+    inorder(root, array)
+    print(array)
 
-    print(root.remove(1))
+
 
 
 
